@@ -51,5 +51,45 @@ print(animals)
 
 for animal in animals:    
     print(f"all this animals can be found at the serengeti, {animal}")
-   
+
+print("loops dont really have alot of work")
+
+#making numerical lists using range function
+
+for number in range(4,10):
+    print(number)
+
+#making a list of number using range function and list function
+#list function wraps the entire range in the list
+value = list(range(1,7))
+print(value)
+
+#example a list of odd numbers
+
+odd_numbers = list(range(1,22,2))
+print(odd_numbers)
+
+#example of cubed value from 1 to 10 starting with an empty list
+
+cubes = []  
+
+for values in range(1,11):
+    cube = values**3
+    cubes.append(cube)
+
+print(cubes)
+
+#copying a list
+
+animals_copied = animals [:]
+
+animals_copied.append("ilama")
+print(animals_copied)
+
+#tuples these are lists that do not change and they are defined by ()
+
+new_animals = ("elephant",'buffalo','dog','sheep','gorrilla')
+print(new_animals[4])
+
+
 
