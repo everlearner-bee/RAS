@@ -44,6 +44,50 @@ robot_2 = robot.get('vector_1',"vector 2 may not exist")
 print(robot_2)
 
 # Looping through dictionaries
+# method 1
+
+names = {'Erastus':'Andedo',
+'Tonny':'Blair',
+'Sydney':'Andedo',
+'Emmanuel':'Andedo',
+}
+
+for fname,lname in names.items():
+    print(f"first name:{fname}")
+    print(f"last name :{lname}")
+
+
+# method 2 using the key() method
+
+names = {'Erastus':'Andedo',
+'Tonny':'Blair',
+'Sydney':'Andedo',
+'Emmanuel':'Andedo',
+}
+
+for name in names.keys():
+    print(f"first name is:{name.upper()}")
+
+for name in names.values():
+    print(name.upper())
+
+#monday session working with dictionaries and looping in a particular order
+
+names = {'Erastus':'Andedo',
+'Tonny':'Blair',
+'Sydney':'Andedo',
+'Emmanuel':'Andedo',
+}
+ 
+for person in sorted(names.keys()):
+    print(person)
+
+for person in set(names.values()):
+    print(person.upper())
+
+
+
+
 
 
 
